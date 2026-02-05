@@ -1,28 +1,30 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
-  <meta charset="UTF-8"> 
-  <title>Client Side Form Validation</title> 
-  <link rel="stylesheet" href="style.css"> 
+<meta charset="UTF-8"> 
+<title>Student Feedback Survey</title> 
+<link rel="stylesheet" href="style.css"> 
 </head> 
 <body> 
- 
-  <form id="myForm"> 
-    <h2>Register</h2> 
- 
-    <label>Username</label> 
-    <input type="text" id="username"> 
- 
-    <label>Email</label> 
-    <input type="text" id="email"> 
- 
-    <label>Password</label> 
-    <input type="password" id="password"> 
- 
-    <p id="error"></p> 
- 
-<button type="submit">Submit</button> 
+<div class="container"> 
+<h2>Student Feedback Survey</h2> 
+<form id="surveyForm"> 
+<label>Name</label> 
+<input type="text" id="name" required> 
+<label>Age</label> 
+<input type="number" id="age" required> 
+<label>Favorite Subject</label> 
+<select id="subject"> 
+<option>Math</option> 
+<option>Science</option> 
+<option>Computer Science</option> 
+<option>Other</option> 
+</select> 
+<button type="submit">Submit Survey</button> 
 </form> 
+<h3>Stored Survey Data (JSON)</h3> 
+<pre id="output"></pre> 
+</div> 
 <script src="script.js"></script> 
 </body> 
 </html> 
