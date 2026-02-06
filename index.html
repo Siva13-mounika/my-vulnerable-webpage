@@ -1,30 +1,24 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
-<title>Student Feedback Survey</title> 
-<link rel="stylesheet" href="style.css"> 
-</head> 
-<body> 
-<div class="container"> 
-<h2>Student Feedback Survey</h2> 
-<form id="surveyForm"> 
-<label>Name</label> 
-<input type="text" id="name" required> 
-<label>Age</label> 
-<input type="number" id="age" required> 
-<label>Favorite Subject</label> 
-<select id="subject"> 
-<option>Math</option> 
-<option>Science</option> 
-<option>Computer Science</option> 
-<option>Other</option> 
-</select> 
-<button type="submit">Submit Survey</button> 
-</form> 
-<h3>Stored Survey Data (JSON)</h3> 
-<pre id="output"></pre> 
-</div> 
-<script src="script.js"></script> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>User Registration Form</h2>
+
+  <input id="name" placeholder="Enter Name"><br>
+  <input id="password" type="password" placeholder="Enter Password"><br>
+  <input id="email" placeholder="Enter Email"><br>
+
+  <button onclick="saveData()">Submit</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
